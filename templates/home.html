@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>BUONHOBO</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='home/home.css') }}">
-    </head>
-    <body>
-        <header class="header"><big>Test</big></header>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PROVA</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='home/home.css' ) }}>
+</head>
+
+<body>
+    {% for articolo in articoli%}
+    <a href={{articolo.link}}>{{articolo.titolo}}</a>
+    <p>{{articolo.data.strftime("%d/%m/%Y")}}</p>
+    <img src={{articolo.immagine}}>
+    <p>{{articolo.descrizione}}</p>
+    {% endfor %}
+</body>
+
 </html>
