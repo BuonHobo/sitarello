@@ -1,14 +1,32 @@
 body{
-    background:wheat;
-}
-
-.header{
+    background:#303030;
     text-align: center;
-    color: yellow;
 }
 
-body > #ciao{
-    color: gray;
-    background: black;
-    width: 100px
+body > header{
+    text-align: center;
+    color: #ffe6ed;
+    padding: 30px;
+}
+
+body > a{
+    color: #f9013f;
+    padding: 10px;
+    font-size: 25px;
+}
+
+body > p{
+    color: #ffe6ed;
+}
+
+body > p.data{
+    font-size: 15px;
+}
+
+body > p.descrizione{
+    max-inline-size: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding-bottom: 50px;
 }
