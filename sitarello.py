@@ -4,12 +4,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return f'<h1>Hello!</h1>'
+    return open("static/html/HTML.html").read()
 
 
 @app.route('/about')
 def about():
-    return f'<h1>Hello!</h1>\nHai trovato la roba segreta'
+    return 'Sto facendo cose a caso'
 
 
 if __name__ == "__main__":
