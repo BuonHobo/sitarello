@@ -1,8 +1,14 @@
 body{
-    background:rgb(9, 9, 139);
+    background:wheat;
 }
 
 .header{
     text-align: center;
-    color: cornsilk;
+    color: yellow;
+}
+
+body > #ciao{
+    color: gray;
+    background: black;
+    width: 100px
 }
