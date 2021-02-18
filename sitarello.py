@@ -1,10 +1,10 @@
-from flask import Flask  # pip install flask
+from flask import Flask,render_template  # pip install flask
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello_world():
-    return open("static/html/HTML.html").read()
+    return render_template("home.html")
 
 
 @app.route('/about')
