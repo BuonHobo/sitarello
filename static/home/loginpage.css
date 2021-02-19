@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #24272E;
+}
+
+header{
+    background: white;
+    padding: 20px;
+}
+
+header > h1{
+    color: #24272E;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.user-pass{
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 4px;
+    text-align: center;
+    width: 400px;
+    color: white;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.input{
+    color:cadetblue;
+    font-size: 16px;
+    padding: 2px 10px;
+    font-family: sans-serif;
+}
+
+#username{
+    position: absolute;
+}
