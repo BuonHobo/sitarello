@@ -7,7 +7,7 @@ class Articolo:
     """Articolo con titolo, data, descrizione, immagine e link."""
 
     def __init__(
-        self, titolo: str, data: str, descrizione: str, immagine: str, link: str
+            self, titolo: str, data: str, descrizione: str, immagine: str, link: str
     ) -> None:
         self.titolo = titolo
         self.data = datetime.datetime.fromisoformat(data)
@@ -16,7 +16,11 @@ class Articolo:
         self.link = link
 
     def __str__(self) -> str:
-        return f"Titolo: {self.titolo}\nDescrizione: {self.descrizione}\nData: {self.data.date()}\nImmagine: {self.immagine}\nLink: {self.link}"
+        return f'''Titolo: {self.titolo}
+        Descrizione: {self.descrizione}
+        Data: {self.data.date()}
+        Immagine: {self.immagine}
+        Link: {self.link}'''
 
 
 def get_articoli() -> list[Articolo]:
